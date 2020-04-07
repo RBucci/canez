@@ -1,0 +1,1531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B9117CD-D1F2-47B4-B144-B28AB9C298CD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CanezPower</RootNamespace>
+    <AssemblyName>CanezPower</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Nueva carpeta\CONEZ\CanezPower\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.1.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.1.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMIN.aspx.cs">
+      <DependentUpon>ADMIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN.aspx.designer.cs">
+      <DependentUpon>ADMIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAdmin.aspx.cs">
+      <DependentUpon>AdminAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAdmin.aspx.designer.cs">
+      <DependentUpon>AdminAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CATEGORY.aspx.cs">
+      <DependentUpon>CATEGORY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CATEGORY.aspx.designer.cs">
+      <DependentUpon>CATEGORY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CATEGORY_GAIA.aspx.cs">
+      <DependentUpon>CATEGORY_GAIA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CATEGORY_GAIA.aspx.designer.cs">
+      <DependentUpon>CATEGORY_GAIA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLASS_CONECTAR.cs" />
+    <Compile Include="CM.aspx.cs">
+      <DependentUpon>CM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CM.aspx.designer.cs">
+      <DependentUpon>CM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CM2.aspx.cs">
+      <DependentUpon>CM2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CM2.aspx.designer.cs">
+      <DependentUpon>CM2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DOCUMENT_SHOP.aspx.cs">
+      <DependentUpon>DOCUMENT_SHOP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOCUMENT_SHOP.aspx.designer.cs">
+      <DependentUpon>DOCUMENT_SHOP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYES.aspx.cs">
+      <DependentUpon>EMPLOYES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EMPLOYES.aspx.designer.cs">
+      <DependentUpon>EMPLOYES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYES1.aspx.cs">
+      <DependentUpon>EMPLOYES1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EMPLOYES1.aspx.designer.cs">
+      <DependentUpon>EMPLOYES1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ENERGIE.aspx.cs">
+      <DependentUpon>ENERGIE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ENERGIE.aspx.designer.cs">
+      <DependentUpon>ENERGIE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EngineReplacement.aspx.cs">
+      <DependentUpon>EngineReplacement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EngineReplacement.aspx.designer.cs">
+      <DependentUpon>EngineReplacement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FUELUSE.aspx.cs">
+      <DependentUpon>FUELUSE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FUELUSE.aspx.designer.cs">
+      <DependentUpon>FUELUSE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GAIA.aspx.cs">
+      <DependentUpon>GAIA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GAIA.aspx.designer.cs">
+      <DependentUpon>GAIA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gaiaver.aspx.cs">
+      <DependentUpon>gaiaver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gaiaver.aspx.designer.cs">
+      <DependentUpon>gaiaver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GENSETMOVEMENT.aspx.cs">
+      <DependentUpon>GENSETMOVEMENT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GENSETMOVEMENT.aspx.designer.cs">
+      <DependentUpon>GENSETMOVEMENT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GENSETUNIT.aspx.cs">
+      <DependentUpon>GENSETUNIT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GENSETUNIT.aspx.designer.cs">
+      <DependentUpon>GENSETUNIT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ini.aspx.cs">
+      <DependentUpon>ini.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ini.aspx.designer.cs">
+      <DependentUpon>ini.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="INICIO.aspx.cs">
+      <DependentUpon>INICIO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="INICIO.aspx.designer.cs">
+      <DependentUpon>INICIO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="INVOICES.aspx.cs">
+      <DependentUpon>INVOICES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="INVOICES.aspx.designer.cs">
+      <DependentUpon>INVOICES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="INVOICES1.aspx.cs">
+      <DependentUpon>INVOICES1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="INVOICES1.aspx.designer.cs">
+      <DependentUpon>INVOICES1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LEASING.aspx.cs">
+      <DependentUpon>LEASING.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LEASING.aspx.designer.cs">
+      <DependentUpon>LEASING.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOG.aspx.cs">
+      <DependentUpon>LOG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOG.aspx.designer.cs">
+      <DependentUpon>LOG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MANTENARCE.aspx.cs">
+      <DependentUpon>MANTENARCE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MANTENARCE.aspx.designer.cs">
+      <DependentUpon>MANTENARCE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Marriot.aspx.cs">
+      <DependentUpon>Marriot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Marriot.aspx.designer.cs">
+      <DependentUpon>Marriot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERLOGIN.Master.cs">
+      <DependentUpon>MASTERLOGIN.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MASTERLOGIN.Master.designer.cs">
+      <DependentUpon>MASTERLOGIN.Master</DependentUpon>
+    </Compile>
+    <Compile Include="NEWPLAN.aspx.cs">
+      <DependentUpon>NEWPLAN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NEWPLAN.aspx.designer.cs">
+      <DependentUpon>NEWPLAN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NEW_CLAVE.aspx.cs">
+      <DependentUpon>NEW_CLAVE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NEW_CLAVE.aspx.designer.cs">
+      <DependentUpon>NEW_CLAVE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NEW_CLIENT.aspx.cs">
+      <DependentUpon>NEW_CLIENT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NEW_CLIENT.aspx.designer.cs">
+      <DependentUpon>NEW_CLIENT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NEW_PLANTA.aspx.cs">
+      <DependentUpon>NEW_PLANTA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NEW_PLANTA.aspx.designer.cs">
+      <DependentUpon>NEW_PLANTA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NEW_PROVIDER.aspx.cs">
+      <DependentUpon>NEW_PROVIDER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NEW_PROVIDER.aspx.designer.cs">
+      <DependentUpon>NEW_PROVIDER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NEW_SITE.aspx.cs">
+      <DependentUpon>NEW_SITE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NEW_SITE.aspx.designer.cs">
+      <DependentUpon>NEW_SITE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="otheruser\DOCUMENTO.aspx.cs">
+      <DependentUpon>DOCUMENTO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otheruser\DOCUMENTO.aspx.designer.cs">
+      <DependentUpon>DOCUMENTO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otheruser\gaiaviewuser.aspx.cs">
+      <DependentUpon>gaiaviewuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otheruser\gaiaviewuser.aspx.designer.cs">
+      <DependentUpon>gaiaviewuser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otheruser\iniciouserother.aspx.cs">
+      <DependentUpon>iniciouserother.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otheruser\iniciouserother.aspx.designer.cs">
+      <DependentUpon>iniciouserother.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otheruser\user.Master.cs">
+      <DependentUpon>user.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otheruser\user.Master.designer.cs">
+      <DependentUpon>user.Master</DependentUpon>
+    </Compile>
+    <Compile Include="OtrosNuevos_usuarios.aspx.cs">
+      <DependentUpon>OtrosNuevos_usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OtrosNuevos_usuarios.aspx.designer.cs">
+      <DependentUpon>OtrosNuevos_usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OYM.aspx.cs">
+      <DependentUpon>OYM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OYM.aspx.designer.cs">
+      <DependentUpon>OYM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PANEL_CODES.aspx.cs">
+      <DependentUpon>PANEL_CODES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PANEL_CODES.aspx.designer.cs">
+      <DependentUpon>PANEL_CODES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PLANTAS.aspx.cs">
+      <DependentUpon>PLANTAS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PLANTAS.aspx.designer.cs">
+      <DependentUpon>PLANTAS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quotes.aspx.cs">
+      <DependentUpon>Quotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotes.aspx.designer.cs">
+      <DependentUpon>Quotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reading.aspx.cs">
+      <DependentUpon>Reading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reading.aspx.designer.cs">
+      <DependentUpon>Reading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="READINGEDIT.aspx.cs">
+      <DependentUpon>READINGEDIT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="READINGEDIT.aspx.designer.cs">
+      <DependentUpon>READINGEDIT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="READINGSUMMARY.aspx.cs">
+      <DependentUpon>READINGSUMMARY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="READINGSUMMARY.aspx.designer.cs">
+      <DependentUpon>READINGSUMMARY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RENTAIL.aspx.cs">
+      <DependentUpon>RENTAIL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RENTAIL.aspx.designer.cs">
+      <DependentUpon>RENTAIL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RENTAL.aspx.cs">
+      <DependentUpon>RENTAL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RENTAL.aspx.designer.cs">
+      <DependentUpon>RENTAL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SEE_TRAINING.aspx.cs">
+      <DependentUpon>SEE_TRAINING.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SEE_TRAINING.aspx.designer.cs">
+      <DependentUpon>SEE_TRAINING.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SHOP.aspx.cs">
+      <DependentUpon>SHOP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SHOP.aspx.designer.cs">
+      <DependentUpon>SHOP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SPARRPART.aspx.cs">
+      <DependentUpon>SPARRPART.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SPARRPART.aspx.designer.cs">
+      <DependentUpon>SPARRPART.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SPENDINGTRANCK.aspx.cs">
+      <DependentUpon>SPENDINGTRANCK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SPENDINGTRANCK.aspx.designer.cs">
+      <DependentUpon>SPENDINGTRANCK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STOCKENTER.aspx.cs">
+      <DependentUpon>STOCKENTER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="STOCKENTER.aspx.designer.cs">
+      <DependentUpon>STOCKENTER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STOCKOUT.aspx.cs">
+      <DependentUpon>STOCKOUT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="STOCKOUT.aspx.designer.cs">
+      <DependentUpon>STOCKOUT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TRACINGTTN.aspx.cs">
+      <DependentUpon>TRACINGTTN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TRACINGTTN.aspx.designer.cs">
+      <DependentUpon>TRACINGTTN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training.aspx.cs">
+      <DependentUpon>Training.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training.aspx.designer.cs">
+      <DependentUpon>Training.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TTN.aspx.cs">
+      <DependentUpon>TTN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TTN.aspx.designer.cs">
+      <DependentUpon>TTN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\CM.aspx.cs">
+      <DependentUpon>CM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\CM.aspx.designer.cs">
+      <DependentUpon>CM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\CM2.aspx.cs">
+      <DependentUpon>CM2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\CM2.aspx.designer.cs">
+      <DependentUpon>CM2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\DOCUMENT_SHOP.aspx.cs">
+      <DependentUpon>DOCUMENT_SHOP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\DOCUMENT_SHOP.aspx.designer.cs">
+      <DependentUpon>DOCUMENT_SHOP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\FUELUSE.aspx.cs">
+      <DependentUpon>FUELUSE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\FUELUSE.aspx.designer.cs">
+      <DependentUpon>FUELUSE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\GAIA.aspx.cs">
+      <DependentUpon>GAIA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\GAIA.aspx.designer.cs">
+      <DependentUpon>GAIA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\GENSETMOVEMENT.aspx.cs">
+      <DependentUpon>GENSETMOVEMENT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\GENSETMOVEMENT.aspx.designer.cs">
+      <DependentUpon>GENSETMOVEMENT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\INICIO1.aspx.cs">
+      <DependentUpon>INICIO1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\INICIO1.aspx.designer.cs">
+      <DependentUpon>INICIO1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\INVOICES1.aspx.cs">
+      <DependentUpon>INVOICES1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\INVOICES1.aspx.designer.cs">
+      <DependentUpon>INVOICES1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\LEASING.aspx.cs">
+      <DependentUpon>LEASING.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\LEASING.aspx.designer.cs">
+      <DependentUpon>LEASING.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\LOG.aspx.cs">
+      <DependentUpon>LOG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\LOG.aspx.designer.cs">
+      <DependentUpon>LOG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\MANTENARCE.aspx.cs">
+      <DependentUpon>MANTENARCE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\MANTENARCE.aspx.designer.cs">
+      <DependentUpon>MANTENARCE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\NEW_CLAVE.aspx.cs">
+      <DependentUpon>NEW_CLAVE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\NEW_CLAVE.aspx.designer.cs">
+      <DependentUpon>NEW_CLAVE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\OYM.aspx.cs">
+      <DependentUpon>OYM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\OYM.aspx.designer.cs">
+      <DependentUpon>OYM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\PANEL_CODES.aspx.cs">
+      <DependentUpon>PANEL_CODES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\PANEL_CODES.aspx.designer.cs">
+      <DependentUpon>PANEL_CODES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\PLANTAS.aspx.cs">
+      <DependentUpon>PLANTAS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\PLANTAS.aspx.designer.cs">
+      <DependentUpon>PLANTAS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\Quotes.aspx.cs">
+      <DependentUpon>Quotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\Quotes.aspx.designer.cs">
+      <DependentUpon>Quotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\Reading.aspx.cs">
+      <DependentUpon>Reading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\Reading.aspx.designer.cs">
+      <DependentUpon>Reading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\READINGEDIT.aspx.cs">
+      <DependentUpon>READINGEDIT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\READINGEDIT.aspx.designer.cs">
+      <DependentUpon>READINGEDIT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\READINGSUMMARY.aspx.cs">
+      <DependentUpon>READINGSUMMARY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\READINGSUMMARY.aspx.designer.cs">
+      <DependentUpon>READINGSUMMARY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\RENTAIL.aspx.cs">
+      <DependentUpon>RENTAIL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\RENTAIL.aspx.designer.cs">
+      <DependentUpon>RENTAIL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\RENTAL.aspx.cs">
+      <DependentUpon>RENTAL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\RENTAL.aspx.designer.cs">
+      <DependentUpon>RENTAL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\SEE_TRAINING1.aspx.cs">
+      <DependentUpon>SEE_TRAINING1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\SEE_TRAINING1.aspx.designer.cs">
+      <DependentUpon>SEE_TRAINING1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\SHOP.aspx.cs">
+      <DependentUpon>SHOP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\SHOP.aspx.designer.cs">
+      <DependentUpon>SHOP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\SPARRPART.aspx.cs">
+      <DependentUpon>SPARRPART.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\SPARRPART.aspx.designer.cs">
+      <DependentUpon>SPARRPART.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\SPENDINGTRANCK.aspx.cs">
+      <DependentUpon>SPENDINGTRANCK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\SPENDINGTRANCK.aspx.designer.cs">
+      <DependentUpon>SPENDINGTRANCK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\STOCKENTER.aspx.cs">
+      <DependentUpon>STOCKENTER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\STOCKENTER.aspx.designer.cs">
+      <DependentUpon>STOCKENTER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\STOCKOUT.aspx.cs">
+      <DependentUpon>STOCKOUT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\STOCKOUT.aspx.designer.cs">
+      <DependentUpon>STOCKOUT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\TTN.aspx.cs">
+      <DependentUpon>TTN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\TTN.aspx.designer.cs">
+      <DependentUpon>TTN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO1\WAMDY1.aspx.cs">
+      <DependentUpon>WAMDY1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO1\WAMDY1.aspx.designer.cs">
+      <DependentUpon>WAMDY1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\CM.aspx.cs">
+      <DependentUpon>CM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\CM.aspx.designer.cs">
+      <DependentUpon>CM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\CM2.aspx.cs">
+      <DependentUpon>CM2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\CM2.aspx.designer.cs">
+      <DependentUpon>CM2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\DOCUMENT_SHOP.aspx.cs">
+      <DependentUpon>DOCUMENT_SHOP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\DOCUMENT_SHOP.aspx.designer.cs">
+      <DependentUpon>DOCUMENT_SHOP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\FUELUSE.aspx.cs">
+      <DependentUpon>FUELUSE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\FUELUSE.aspx.designer.cs">
+      <DependentUpon>FUELUSE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\GAIA.aspx.cs">
+      <DependentUpon>GAIA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\GAIA.aspx.designer.cs">
+      <DependentUpon>GAIA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\gaiaver.aspx.cs">
+      <DependentUpon>gaiaver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\gaiaver.aspx.designer.cs">
+      <DependentUpon>gaiaver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\GENSETMOVEMENT.aspx.cs">
+      <DependentUpon>GENSETMOVEMENT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\GENSETMOVEMENT.aspx.designer.cs">
+      <DependentUpon>GENSETMOVEMENT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\INICIO1.aspx.cs">
+      <DependentUpon>INICIO1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\INICIO1.aspx.designer.cs">
+      <DependentUpon>INICIO1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\INVOICES.aspx.cs">
+      <DependentUpon>INVOICES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\INVOICES.aspx.designer.cs">
+      <DependentUpon>INVOICES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\INVOICES1.aspx.cs">
+      <DependentUpon>INVOICES1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\INVOICES1.aspx.designer.cs">
+      <DependentUpon>INVOICES1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\LEASING.aspx.cs">
+      <DependentUpon>LEASING.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\LEASING.aspx.designer.cs">
+      <DependentUpon>LEASING.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\LOG.aspx.cs">
+      <DependentUpon>LOG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\LOG.aspx.designer.cs">
+      <DependentUpon>LOG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\MANTENARCE.aspx.cs">
+      <DependentUpon>MANTENARCE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\MANTENARCE.aspx.designer.cs">
+      <DependentUpon>MANTENARCE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\Marriot.aspx.cs">
+      <DependentUpon>Marriot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\Marriot.aspx.designer.cs">
+      <DependentUpon>Marriot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\NEW_CLAVE.aspx.cs">
+      <DependentUpon>NEW_CLAVE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\NEW_CLAVE.aspx.designer.cs">
+      <DependentUpon>NEW_CLAVE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\OYM.aspx.cs">
+      <DependentUpon>OYM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\OYM.aspx.designer.cs">
+      <DependentUpon>OYM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\PANEL_CODES.aspx.cs">
+      <DependentUpon>PANEL_CODES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\PANEL_CODES.aspx.designer.cs">
+      <DependentUpon>PANEL_CODES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\PLANTAS.aspx.cs">
+      <DependentUpon>PLANTAS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\PLANTAS.aspx.designer.cs">
+      <DependentUpon>PLANTAS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\Quotes.aspx.cs">
+      <DependentUpon>Quotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\Quotes.aspx.designer.cs">
+      <DependentUpon>Quotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\Reading.aspx.cs">
+      <DependentUpon>Reading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\Reading.aspx.designer.cs">
+      <DependentUpon>Reading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\READINGEDIT.aspx.cs">
+      <DependentUpon>READINGEDIT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\READINGEDIT.aspx.designer.cs">
+      <DependentUpon>READINGEDIT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\READINGSUMMARY.aspx.cs">
+      <DependentUpon>READINGSUMMARY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\READINGSUMMARY.aspx.designer.cs">
+      <DependentUpon>READINGSUMMARY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\RENTAIL.aspx.cs">
+      <DependentUpon>RENTAIL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\RENTAIL.aspx.designer.cs">
+      <DependentUpon>RENTAIL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\RENTAL.aspx.cs">
+      <DependentUpon>RENTAL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\RENTAL.aspx.designer.cs">
+      <DependentUpon>RENTAL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\SEE_TRAINING.aspx.cs">
+      <DependentUpon>SEE_TRAINING.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\SEE_TRAINING.aspx.designer.cs">
+      <DependentUpon>SEE_TRAINING.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\SHOP.aspx.cs">
+      <DependentUpon>SHOP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\SHOP.aspx.designer.cs">
+      <DependentUpon>SHOP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\SPARRPART.aspx.cs">
+      <DependentUpon>SPARRPART.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\SPARRPART.aspx.designer.cs">
+      <DependentUpon>SPARRPART.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\SPENDINGTRANCK.aspx.cs">
+      <DependentUpon>SPENDINGTRANCK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\SPENDINGTRANCK.aspx.designer.cs">
+      <DependentUpon>SPENDINGTRANCK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\STOCKENTER.aspx.cs">
+      <DependentUpon>STOCKENTER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\STOCKENTER.aspx.designer.cs">
+      <DependentUpon>STOCKENTER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\STOCKOUT.aspx.cs">
+      <DependentUpon>STOCKOUT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\STOCKOUT.aspx.designer.cs">
+      <DependentUpon>STOCKOUT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\TRACINGTTN.aspx.cs">
+      <DependentUpon>TRACINGTTN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\TRACINGTTN.aspx.designer.cs">
+      <DependentUpon>TRACINGTTN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\TTN.aspx.cs">
+      <DependentUpon>TTN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\TTN.aspx.designer.cs">
+      <DependentUpon>TTN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO2\WAMDY1.aspx.cs">
+      <DependentUpon>WAMDY1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIO2\WAMDY1.aspx.designer.cs">
+      <DependentUpon>WAMDY1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValerioCanezGenset.aspx.cs">
+      <DependentUpon>ValerioCanezGenset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValerioCanezGenset.aspx.designer.cs">
+      <DependentUpon>ValerioCanezGenset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValerioCanez\NewValerioCanez.aspx.cs">
+      <DependentUpon>NewValerioCanez.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValerioCanez\NewValerioCanez.aspx.designer.cs">
+      <DependentUpon>NewValerioCanez.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValerioCanez\NEW_CLAVE.aspx.cs">
+      <DependentUpon>NEW_CLAVE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValerioCanez\NEW_CLAVE.aspx.designer.cs">
+      <DependentUpon>NEW_CLAVE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValerioCanez\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValerioCanez\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ValerioCanez\ValerioCanezGenset.aspx.cs">
+      <DependentUpon>ValerioCanezGenset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValerioCanez\ValerioCanezGenset.aspx.designer.cs">
+      <DependentUpon>ValerioCanezGenset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VEHICLE.aspx.cs">
+      <DependentUpon>VEHICLE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VEHICLE.aspx.designer.cs">
+      <DependentUpon>VEHICLE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WAMDY.aspx.cs">
+      <DependentUpon>WAMDY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WAMDY.aspx.designer.cs">
+      <DependentUpon>WAMDY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wandy12.aspx.cs">
+      <DependentUpon>wandy12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wandy12.aspx.designer.cs">
+      <DependentUpon>wandy12.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADMIN.aspx" />
+    <Content Include="AdminAdmin.aspx" />
+    <Content Include="Captura.ico" />
+    <Content Include="CATEGORY.aspx" />
+    <Content Include="CATEGORY_GAIA.aspx" />
+    <Content Include="CM.aspx" />
+    <Content Include="CM2.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\sb-admin.css" />
+    <Content Include="css\sb-admin.min.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="DOCUMENT_SHOP.aspx" />
+    <Content Include="EMPLOYES.aspx" />
+    <Content Include="EMPLOYES1.aspx" />
+    <Content Include="ENERGIE.aspx" />
+    <Content Include="EngineReplacement.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FUELUSE.aspx" />
+    <Content Include="GAIA.aspx" />
+    <Content Include="gaiaver.aspx" />
+    <Content Include="GENSETMOVEMENT.aspx" />
+    <Content Include="GENSETUNIT.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="imagenes\1.jpg" />
+    <Content Include="imagenes\buscar-y-dnde-est-el-bibliotecario-4-638.jpg" />
+    <Content Include="imagenes\canez1.jpg" />
+    <Content Include="imagenes\IMG-20170215-WA0035.jpg" />
+    <Content Include="imagenes\IMG-20170215-WA0038.jpg" />
+    <Content Include="imagenes\su.jpg" />
+    <Content Include="images\minus.gif" />
+    <Content Include="images\plus.gif" />
+    <Content Include="ini.aspx" />
+    <Content Include="INICIO.aspx" />
+    <Content Include="INVOICES.aspx" />
+    <Content Include="INVOICES1.aspx" />
+    <Content Include="js\sb-admin-charts.js" />
+    <Content Include="js\sb-admin-charts.min.js" />
+    <Content Include="js\sb-admin-datatables.js" />
+    <Content Include="js\sb-admin-datatables.min.js" />
+    <Content Include="js\sb-admin.js" />
+    <Content Include="js\sb-admin.min.js" />
+    <Content Include="LEASING.aspx" />
+    <Content Include="LOG.aspx" />
+    <Content Include="MANTENARCE.aspx" />
+    <Content Include="Marriot.aspx" />
+    <Content Include="Media\layout.css" />
+    <Content Include="Media\layout\header-in.png" />
+    <Content Include="Media\layout\header.png" />
+    <Content Include="Media\layout\li.png" />
+    <Content Include="Media\layout\main.png" />
+    <Content Include="Media\layout\shadow.png" />
+    <Content Include="NEWPLAN.aspx" />
+    <Content Include="NEW_CLAVE.aspx" />
+    <Content Include="NEW_CLIENT.aspx" />
+    <Content Include="NEW_PLANTA.aspx" />
+    <Content Include="NEW_PROVIDER.aspx" />
+    <Content Include="NEW_SITE.aspx" />
+    <Content Include="obj\Debug\CanezPower.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\CanezPower.dll" />
+    <Content Include="obj\Debug\CanezPower.pdb" />
+    <Content Include="obj\Debug\Interop.CrystalActiveXReportViewerLib13.dll" />
+    <Content Include="obj\Debug\Interop.CrystalReportViewerExportLib.dll" />
+    <Content Include="obj\Debug\Interop.CrystalReportViewerWebReportSourceLib.dll" />
+    <Content Include="obj\Debug\TempPE\CrystalReport1.cs.dll" />
+    <Content Include="obj\Debug\TempPE\DataSet1.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Edgarpower_conezdbDataSet.Designer.cs.dll" />
+    <Content Include="obj\Release\CanezPower.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\CanezPower.dll" />
+    <Content Include="obj\Release\CanezPower.pdb" />
+    <Content Include="obj\Release\Package\PackageTmp\About.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\ADMIN.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Antlr3.Runtime.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\AspNet.ScriptManager.bootstrap.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\CanezPower.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AI.Web.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ApplicationInsights.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\MySql.Data.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Newtonsoft.Json.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\System.Web.Optimization.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\WebGrease.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\Captura.ico" />
+    <Content Include="obj\Release\Package\PackageTmp\Contact.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap.min.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Site.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Default.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\EMPLOYES.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\favicon.ico" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="obj\Release\Package\PackageTmp\GENSETUNIT.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Global.asax" />
+    <Content Include="obj\Release\Package\PackageTmp\imagenes\WhatsApp Image 2017-02-21 at 16.56.49 %281%29.jpeg" />
+    <Content Include="obj\Release\Package\PackageTmp\INICIO1.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\MANTENARCE.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\NEWPLAN.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\NEW_CLAVE.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\NEW_CLIENT.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\NEW_SITE.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\PLANTAS.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\bootstrap.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\bootstrap.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-1.10.2.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-1.10.2.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\modernizr-2.6.2.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\respond.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\respond.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\DetailsView.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\Focus.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\GridView.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\Menu.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MenuStandards.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\SmartNav.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\TreeView.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebForms.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebParts.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebUIValidation.js" />
+    <None Include="obj\Release\Package\PackageTmp\Scripts\_references.js" />
+    <Content Include="obj\Release\Package\PackageTmp\SHOP.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\SPARRPART.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\TTN.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\USUARIO1\MANTENARCE1.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\USUARIO1\NEW_CLAVE1.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\USUARIO1\PLANTAS1.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\USUARIO1\TTN1.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\USUARIO2\MANTENARCE2.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\USUARIO2\NEW_CLAVE2.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\USUARIO2\PLANTAS2.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\USUARIO2\TTN2.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\ViewSwitcher.ascx" />
+    <Content Include="obj\Release\Package\PackageTmp\WAMDY.aspx" />
+    <Content Include="obj\Release\TempPE\CrystalReport1.cs.dll" />
+    <Content Include="obj\Release\TempPE\DataSet1.Designer.cs.dll" />
+    <Content Include="obj\Release\_WPPLastBuildInfo.txt" />
+    <Content Include="otheruser\DOCUMENTO.aspx" />
+    <Content Include="otheruser\gaiaviewuser.aspx" />
+    <Content Include="otheruser\iniciouserother.aspx" />
+    <Content Include="OtrosNuevos_usuarios.aspx" />
+    <Content Include="OYM.aspx" />
+    <Content Include="PANEL_CODES.aspx" />
+    <Content Include="PLANTAS.aspx" />
+    <Content Include="Project_Readme.html" />
+    <Content Include="Quotes.aspx" />
+    <Content Include="Reading.aspx" />
+    <Content Include="READINGEDIT.aspx" />
+    <Content Include="READINGSUMMARY.aspx" />
+    <Content Include="RENTAIL.aspx" />
+    <Content Include="RENTAL.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="MASTERLOGIN.Master" />
+    <Content Include="Fakes\Antlr3.Runtime.fakes" />
+    <Content Include="Fakes\AspNet.ScriptManager.bootstrap.fakes" />
+    <Content Include="Fakes\AspNet.ScriptManager.jQuery.fakes" />
+    <Content Include="Fakes\Microsoft.AI.ServerTelemetryChannel.fakes" />
+    <Content Include="Fakes\Microsoft.AI.WindowsServer.fakes" />
+    <Content Include="imagenes\SUBIR" />
+    <Content Include="obj\Debug\CanezPower.csproj.CopyComplete" />
+    <Content Include="obj\Debug\CanezPower.csproj.ResolveComReference.cache" />
+    <Content Include="obj\Debug\CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\RdlCompile.cache" />
+    <Content Include="obj\Debug\RdlCompile.compiled" />
+    <Content Include="obj\Release\CanezPower.csproj.ResolveComReference.cache" />
+    <Content Include="obj\Release\CanezPower.csprojResolveAssemblyReference.cache" />
+    <Content Include="obj\Release\CoreCompileInputs.cache" />
+    <Content Include="obj\Release\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\Package\PackageTmp\ApplicationInsights.config" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\ApplicationInsights.config" />
+    <Content Include="obj\Release\Package\PackageTmp\Bundle.config" />
+    <Content Include="obj\Release\Package\PackageTmp\DataSet1.xsc" />
+    <Content Include="obj\Release\Package\PackageTmp\DataSet1.xss" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="obj\Release\Package\PackageTmp\MASTERLOGIN.Master" />
+    <Content Include="obj\Release\Package\PackageTmp\packages.config" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-1.10.2.min.map" />
+    <Content Include="obj\Release\Package\PackageTmp\Site.Master" />
+    <Content Include="obj\Release\Package\PackageTmp\USUARIO1\Site1.Master" />
+    <Content Include="obj\Release\Package\PackageTmp\USUARIO2\Site2.Master" />
+    <Content Include="obj\Release\Package\PackageTmp\Web.config" />
+    <Content Include="obj\Release\RdlCompile.cache" />
+    <Content Include="obj\Release\RdlCompile.compiled" />
+    <Content Include="obj\Release\TransformWebConfig\assist\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\original\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\transformed\Web.config" />
+    <Content Include="otheruser\user.Master" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="script\jquery-1.5.2.min.js" />
+    <Content Include="SEE_TRAINING.aspx" />
+    <Content Include="SHOP.aspx" />
+    <Content Include="SPARRPART.aspx" />
+    <Content Include="SPENDINGTRANCK.aspx" />
+    <Content Include="STOCKENTER.aspx" />
+    <Content Include="STOCKOUT.aspx" />
+    <Content Include="Themes\calendar_g.css" />
+    <Content Include="Themes\calendar_green.css" />
+    <Content Include="Themes\calendar_traditional.css" />
+    <Content Include="Themes\calendar_transparent.css" />
+    <Content Include="Themes\calendar_white.css" />
+    <Content Include="TRACINGTTN.aspx" />
+    <Content Include="Training.aspx" />
+    <Content Include="TTN.aspx" />
+    <Content Include="USUARIO1\CM.aspx" />
+    <Content Include="USUARIO1\CM2.aspx" />
+    <Content Include="USUARIO1\DOCUMENT_SHOP.aspx" />
+    <Content Include="USUARIO1\FUELUSE.aspx" />
+    <Content Include="USUARIO1\GAIA.aspx" />
+    <Content Include="USUARIO1\GENSETMOVEMENT.aspx" />
+    <Content Include="USUARIO1\INICIO1.aspx" />
+    <Content Include="USUARIO1\INVOICES1.aspx" />
+    <Content Include="USUARIO1\LEASING.aspx" />
+    <Content Include="USUARIO1\LOG.aspx" />
+    <Content Include="USUARIO1\MANTENARCE.aspx" />
+    <Content Include="USUARIO1\NEW_CLAVE.aspx" />
+    <Content Include="USUARIO1\OYM.aspx" />
+    <Content Include="USUARIO1\PANEL_CODES.aspx" />
+    <Content Include="USUARIO1\PLANTAS.aspx" />
+    <Content Include="USUARIO1\Quotes.aspx" />
+    <Content Include="USUARIO1\Reading.aspx" />
+    <Content Include="USUARIO1\READINGEDIT.aspx" />
+    <Content Include="USUARIO1\READINGSUMMARY.aspx" />
+    <Content Include="USUARIO1\RENTAIL.aspx" />
+    <Content Include="USUARIO1\RENTAL.aspx" />
+    <Content Include="USUARIO1\SEE_TRAINING1.aspx" />
+    <Content Include="USUARIO1\SHOP.aspx" />
+    <Content Include="USUARIO1\SPARRPART.aspx" />
+    <Content Include="USUARIO1\SPENDINGTRANCK.aspx" />
+    <Content Include="USUARIO1\STOCKENTER.aspx" />
+    <Content Include="USUARIO1\STOCKOUT.aspx" />
+    <Content Include="USUARIO1\TTN.aspx" />
+    <Content Include="USUARIO1\WAMDY1.aspx" />
+    <Content Include="USUARIO2\CanezPower.csproj.user" />
+    <Content Include="USUARIO2\CM.aspx" />
+    <Content Include="USUARIO2\CM2.aspx" />
+    <Content Include="USUARIO2\DOCUMENT_SHOP.aspx" />
+    <Content Include="USUARIO2\FUELUSE.aspx" />
+    <Content Include="USUARIO2\GAIA.aspx" />
+    <Content Include="USUARIO2\gaiaver.aspx" />
+    <Content Include="USUARIO2\GENSETMOVEMENT.aspx" />
+    <Content Include="USUARIO2\INICIO1.aspx" />
+    <Content Include="USUARIO2\INVOICES.aspx" />
+    <Content Include="USUARIO2\INVOICES1.aspx" />
+    <Content Include="USUARIO2\LEASING.aspx" />
+    <Content Include="USUARIO2\LOG.aspx" />
+    <Content Include="USUARIO2\MANTENARCE.aspx" />
+    <Content Include="USUARIO2\Marriot.aspx" />
+    <Content Include="USUARIO2\NEW_CLAVE.aspx" />
+    <Content Include="USUARIO2\OYM.aspx" />
+    <Content Include="USUARIO2\PANEL_CODES.aspx" />
+    <Content Include="USUARIO2\PLANTAS.aspx" />
+    <Content Include="USUARIO2\Quotes.aspx" />
+    <Content Include="USUARIO2\Reading.aspx" />
+    <Content Include="USUARIO2\READINGEDIT.aspx" />
+    <Content Include="USUARIO2\READINGSUMMARY.aspx" />
+    <Content Include="USUARIO2\RENTAIL.aspx" />
+    <Content Include="USUARIO2\RENTAL.aspx" />
+    <Content Include="USUARIO2\SEE_TRAINING.aspx" />
+    <Content Include="USUARIO2\SHOP.aspx" />
+    <Content Include="USUARIO2\SPARRPART.aspx" />
+    <Content Include="USUARIO2\SPENDINGTRANCK.aspx" />
+    <Content Include="USUARIO2\STOCKENTER.aspx" />
+    <Content Include="USUARIO2\STOCKOUT.aspx" />
+    <Content Include="USUARIO2\TRACINGTTN.aspx" />
+    <Content Include="USUARIO2\TTN.aspx" />
+    <Content Include="USUARIO2\WAMDY1.aspx" />
+    <Content Include="ValerioCanezGenset.aspx" />
+    <Content Include="ValerioCanez\NewValerioCanez.aspx" />
+    <Content Include="ValerioCanez\NEW_CLAVE.aspx" />
+    <Content Include="ValerioCanez\ValerioCanezGenset.aspx" />
+    <Content Include="VEHICLE.aspx" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\chart.js\Chart.bundle.js" />
+    <Content Include="vendor\chart.js\Chart.bundle.min.js" />
+    <Content Include="vendor\chart.js\Chart.js" />
+    <Content Include="vendor\chart.js\Chart.min.js" />
+    <Content Include="vendor\datatables\dataTables.bootstrap4.css" />
+    <Content Include="vendor\datatables\dataTables.bootstrap4.js" />
+    <Content Include="vendor\datatables\jquery.dataTables.js" />
+    <Content Include="vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="vendor\jquery\jquery.js" />
+    <Content Include="vendor\jquery\jquery.min.js" />
+    <Content Include="vendor\jquery\jquery.slim.js" />
+    <Content Include="vendor\jquery\jquery.slim.min.js" />
+    <Content Include="WAMDY.aspx" />
+    <Content Include="wandy12.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Site.Master" />
+    <Content Include="USUARIO1\Site1.Master" />
+    <Content Include="USUARIO1\Site2.Master" />
+    <Content Include="USUARIO2\Site2.Master" />
+    <Content Include="ValerioCanezGenset.zip" />
+    <Content Include="ValerioCanez\Site.Master" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="vendor\font-awesome\css\font-awesome.css.map" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="vendor\font-awesome\less\animated.less" />
+    <Content Include="vendor\font-awesome\less\bordered-pulled.less" />
+    <Content Include="vendor\font-awesome\less\core.less" />
+    <Content Include="vendor\font-awesome\less\fixed-width.less" />
+    <Content Include="vendor\font-awesome\less\font-awesome.less" />
+    <Content Include="vendor\font-awesome\less\icons.less" />
+    <Content Include="vendor\font-awesome\less\larger.less" />
+    <Content Include="vendor\font-awesome\less\list.less" />
+    <Content Include="vendor\font-awesome\less\mixins.less" />
+    <Content Include="vendor\font-awesome\less\path.less" />
+    <Content Include="vendor\font-awesome\less\rotated-flipped.less" />
+    <Content Include="vendor\font-awesome\less\screen-reader.less" />
+    <Content Include="vendor\font-awesome\less\stacked.less" />
+    <Content Include="vendor\font-awesome\less\variables.less" />
+    <Content Include="vendor\font-awesome\scss\font-awesome.scss" />
+    <Content Include="vendor\font-awesome\scss\_animated.scss" />
+    <Content Include="vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="vendor\font-awesome\scss\_core.scss" />
+    <Content Include="vendor\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="vendor\font-awesome\scss\_icons.scss" />
+    <Content Include="vendor\font-awesome\scss\_larger.scss" />
+    <Content Include="vendor\font-awesome\scss\_list.scss" />
+    <Content Include="vendor\font-awesome\scss\_mixins.scss" />
+    <Content Include="vendor\font-awesome\scss\_path.scss" />
+    <Content Include="vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="vendor\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="vendor\font-awesome\scss\_stacked.scss" />
+    <Content Include="vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="vendor\jquery\jquery.min.map" />
+    <Content Include="vendor\jquery\jquery.slim.min.map" />
+    <Content Include="ViewSwitcher.zip" />
+    <Content Include="scss\navbar\_navbar_colors.scss" />
+    <Content Include="scss\navbar\_navbar_fixed.scss" />
+    <Content Include="scss\navbar\_navbar_global.scss" />
+    <Content Include="scss\navbar\_navbar_static.scss" />
+    <Content Include="scss\navbar\_navbar_toggle.scss" />
+    <Content Include="scss\sb-admin.scss" />
+    <Content Include="scss\_cards.scss" />
+    <Content Include="scss\_footer.scss" />
+    <Content Include="scss\_global.scss" />
+    <Content Include="scss\_login.scss" />
+    <Content Include="scss\_mixins.scss" />
+    <Content Include="scss\_utilities.scss" />
+    <Content Include="scss\_variables.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Start\" />
+    <Folder Include="obj\Release\ProfileTransformWebConfig\transformed\" />
+    <Folder Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>42732</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48369/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

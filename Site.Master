@@ -1,0 +1,279 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="CanezPower.Site" %>
+
+<script runat=server>
+
+    public System.Security.Principal.IPrincipal User
+    {
+        get;
+        [System.Security.Permissions.SecurityPermission(System.Security.Permissions.SecurityAction.Demand, ControlPrincipal = true)]
+        set;
+    }
+    public static string user = "";
+protected String GetTime()
+{
+
+    string name = Page.User.Identity.Name;
+    ver();
+    user = Page.User.Identity.Name;
+    return name;
+}
+
+
+
+
+void ver()
+{
+
+    Response.Cache.SetCacheability(HttpCacheability.Server);
+
+    Response.Cache.SetSlidingExpiration(true);
+}
+
+public static string name;
+protected String USer()
+{
+    name = GetTime();
+    return name;
+}
+
+
+</script>
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canez Power Division S.A.</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/Captura.ico" rel="shortcut icon" type="image/x-icon" />
+  
+
+    <style type="text/css">
+
+        .div img{
+  position: absolute;
+  top:  60px; 
+  left: 1000px;
+}
+
+            ul.nav li.dropdown:hover > ul.dropdown-menu {
+        display: block;
+}
+
+        .auto-style3 {
+            float: left;
+            padding: 15px 15px;
+            font-size: large;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+
+
+
+        .FixedHeader {
+            /*position: absolute;*/
+            font-weight: bold;
+        }   
+
+
+        imgbtngv:hover 
+        {
+            background-color:#DCDCDC; 
+    border:1px solid #CCC;
+    padding:4px 4px 4px 4px; 
+    border-radius:4px;
+        }
+
+        
+         /*.FixedHeader {
+            position: absolute;
+            font-weight: bold;
+        }*/  
+
+
+         div.scroll {
+  
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+}
+
+    </style>
+
+
+
+ 
+
+</head>
+<body onload="init();">
+         
+    <form runat="server">
+          
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+              <%--  <asp:ScriptReference Name="respond" />--%>
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+       <%-- <div class="div">
+
+            <img width="150xp" height=150xp"" src="imagenes/WhatsApp%20Image%202017-02-18%20at%2018.24.37.jpeg" />
+
+        </div>--%>
+
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="auto-style3" runat="server" href="INICIO.aspx">Canez Power Division S.A.</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+
+
+                        <li  class="dropdown"><a href="PLANTAS.aspx">INVENTORY</a>
+
+                             <ul class="dropdown-menu">
+                                <li><a href="RENTAIL.aspx">RETAIL</a></li>
+                                 <li><a href="RENTAL.aspx">RENTAL</a></li>
+                                 <li><a href="OYM.aspx">O&M</a></li>
+                                 <li><a href="LEASING.aspx">LEASING</a></li>
+                                  <li><a href="GENSETMOVEMENT.aspx">GENSET MOVEMENT</a></li>
+                                 
+                                
+                             </ul>
+
+
+                        </li>
+                        <li class="dropdown"><a href="#">OPERATION</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="MANTENARCE.aspx">SERVICE</a></li>
+                                <li><a href="SHOP.aspx">SHOP</a></li>
+                                <li><a href="CM.aspx">FF-CM</a></li>
+                                <li><a href="CM2.aspx">CM</a></li>
+                                <li><a href="LOG.aspx">LOG</a></li>
+                             </ul>
+                        </li>
+
+                        <li class="dropdown"><a href="SPARRPART.aspx">WAREHOUSE</a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="STOCKENTER.aspx">STOCK ENTER</a></li>
+                                <li><a href="STOCKOUT.aspx">STOCK OUT</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="TTN.aspx">TTN</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="TRACINGTTN.aspx">TRACING TTN</a></li>
+                               
+                             </ul>
+
+                        </li>
+
+
+                        <li class="dropdown"><a href="#">EXTRA</a>
+                             <ul class="dropdown-menu">
+                                <li><a href="wandy12.aspx">WANDY</a></li>
+                                 <li><a href="SEE_TRAINING.aspx">TRAINING</a></li>
+                                <li><a href="FUELUSE.aspx">FUEL USE</a></li>
+                                  <li><a href="PANEL_CODES.aspx">PANEL CODES</a></li>
+                                  <li><a href="gaiaver.aspx">GAIA</a></li>
+                                
+                              
+                            </ul>
+
+
+                        </li>
+
+                       <%-- <li class="dropdown"><a href="ValerioCanezGenset.aspx">VALERIO CANEZ</a>
+                            <%--<ul class="dropdown-menu">
+                                <li><a href="TRACINGTTN.aspx">TRACING TTN</a></li>
+                               
+                             </ul>--%>
+
+                       <%-- </li>--%>
+                        <li class="dropdown"><a href="Marriot.aspx">MARRIOTT</a>
+
+
+                              <%--<ul class="dropdown-menu">
+                                <li><a href="Reading.aspx">NEW READING</a></li>
+                                   <li><a href="READINGEDIT.aspx">EDIT READING</a></li>
+                              --%>
+                         <%--   </ul>--%>
+                        </li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">ADMIN<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="NEW_CLIENT.aspx">CLIENT</a></li>
+                                <li><a href="EMPLOYES1.aspx">EMPLOYEE</a></li>
+                                <li><a href="OtrosNuevos_usuarios.aspx">OTHER USER</a></li>
+                                <li><a href="SPENDINGTRANCK.aspx">EXPENSES</a></li>
+                                <li><a href="INVOICES1.aspx">INVOICES</a></li>
+                                 <li><a href="Quotes.aspx">QUOTES</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li class="dropdown"><a href="NEW_CLAVE.aspx" class="dropdown-toggle" data-toggle="dropdown">
+                            <% =USer().ToUpper() %>
+                        </a>
+                            <ul class="dropdown-menu">
+
+
+                                <li><a href="NEW_CLAVE.aspx">NEW PASWORD</a></li>
+
+                                <li>
+                                    <asp:Button ID="Button1" runat="server" class="btn btn-danger" OnClick="Button1_Click" Text="LOG OUT" />
+
+                                </li>
+                            </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">   
+   
+           
+             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>        
+             <asp:ContentPlaceHolder ID="headcontent" runat="server">
+            </asp:ContentPlaceHolder>
+           
+           
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> COPYRIGHT, JD SOFTWARE Co.</p>
+            </footer>
+        </div>
+
+    </form>
+</body>
+</html>

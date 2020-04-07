@@ -1,0 +1,152 @@
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\ApplicationInsights.config
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\csc.exe
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\System.Collections.Immutable.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\System.Reflection.Metadata.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\vbc.exe
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\VBCSCompiler.exe
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\VBCSCompiler.exe.config
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\CanezPower.dll.config
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\CanezPower.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\CanezPower.pdb
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Antlr3.Runtime.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\AspNet.ScriptManager.bootstrap.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\AspNet.ScriptManager.jQuery.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.Agent.Intercept.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.DependencyCollector.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.Web.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.WindowsServer.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.ApplicationInsights.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.ScriptManager.WebForms.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.Web.Infrastructure.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\MySql.Data.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Newtonsoft.Json.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\System.Web.Optimization.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\WebGrease.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.DependencyCollector.xml
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.Web.xml
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.WindowsServer.xml
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.ApplicationInsights.xml
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\System.Web.Optimization.xml
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Antlr3.Runtime.pdb
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Newtonsoft.Json.xml
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\obj\Release\CanezPower.csprojResolveAssemblyReference.cache
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\obj\Release\CanezPower.dll
+E:\PROYECTOS EN ASP\CONEZ\CanezPower\obj\Release\CanezPower.pdb
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\ApplicationInsights.config
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\csc.exe
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\System.Collections.Immutable.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\System.Reflection.Metadata.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\vbc.exe
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\VBCSCompiler.exe
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\roslyn\VBCSCompiler.exe.config
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\CanezPower.dll.config
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\CanezPower.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\CanezPower.pdb
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Antlr3.Runtime.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\AspNet.ScriptManager.bootstrap.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\AspNet.ScriptManager.jQuery.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.Agent.Intercept.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.DependencyCollector.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.Web.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.WindowsServer.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.ApplicationInsights.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.ScriptManager.WebForms.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.Web.Infrastructure.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Newtonsoft.Json.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\System.Web.Optimization.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\WebGrease.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.DependencyCollector.xml
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.Web.xml
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AI.WindowsServer.xml
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.ApplicationInsights.xml
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\System.Web.Optimization.xml
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Antlr3.Runtime.pdb
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Newtonsoft.Json.xml
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\obj\Release\CanezPower.csprojResolveAssemblyReference.cache
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\obj\Release\CanezPower.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\obj\Release\CanezPower.pdb
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\obj\Release\RdlCompile.cache
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\obj\Release\RdlCompile.compiled
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\bin\MySql.Data.dll
+D:\jose\trabajo actuales\PROYECTOS EN ASP\CONEZ\CanezPower\obj\Release\CanezPower.csproj.ResolveComReference.cache
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\ApplicationInsights.config
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\roslyn\csc.exe
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\roslyn\vbc.exe
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\roslyn\VBCSCompiler.exe
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\CanezPower.dll.config
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\CanezPower.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\CanezPower.pdb
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Antlr3.Runtime.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.AI.Web.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\MySql.Data.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Newtonsoft.Json.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\System.Web.Optimization.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\WebGrease.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.AI.Web.xml
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\System.Web.Optimization.xml
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Antlr3.Runtime.pdb
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Newtonsoft.Json.xml
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\obj\Release\CanezPower.csprojResolveAssemblyReference.cache
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\obj\Release\CanezPower.csproj.ResolveComReference.cache
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\obj\Release\CanezPower.dll
+C:\Users\Edgar Guerrero\Desktop\New folder\CONEZ\CanezPower\obj\Release\CanezPower.pdb
